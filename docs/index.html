@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> 
+    
+</head>
+<body>
+    <section class ="header">
+        <div class="nav-bar">
+            <nav>
+                <div class="logo">
+                    <a href="#"><h1><span>S</span>tefanu<span>s</span> <span>W</span>ilfri<span>d</span></h1></a>
+                </div>
+                <div class="nav-list" id="navList">  
+                    <i class="fa fa-times-circle" onclick="hideMenu()"></i>            
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Services</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>                    
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+        </div>
+
+        <div class="text-box">
+            <h1>Hi, I'm Stefanus Wilfrid</h1>
+            <p> I'm on my 3rd semester as a <mark>Computer Science Undergraduate</mark> at University of Nottingham Ningbo China.<br> Currently I'm learning Web Design.</p>
+            <a href="" class="btn">View Portfolio</a>
+
+        </div>
+                    
+    </section>
+
+    <section class ="about-me">
+        <div class="row">
+            <div class="about-col">
+                <h1>ABOUT <span>ME </span> </h1>
+                <p> I'm a Computer Science Undergraduate at University of Nottingham Ningbo China. I'm Currently learning HTML & CSS. Loves to watch Youtube and Series during 
+                    my freetime. I'm currently looking for experiences to increase my technical and soft skills. Aside from CS, I'm also learning Mandarin
+                to improve my language skills. </p>
+                <a href ="" class = "hero-btn blue-btn">DOWNLOAD RESUME</a>
+            </div>
+
+            <div class="about-col">
+                <img src="../images/me2.jpg">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="skills">
+        <h1 class ="title"> My <span>Top</span> Skills </h1>
+        <p> This skills are just for my learning how to implement html and css purpose.I'm no expert at these skills</p>
+        <div class="skills-wrapper">
+            <img src="../images/python.png" class="icon icon-card">
+            <img src="../images/html.png" class="icon icon-card">
+            <img src="../images/js.jpg" class="icon icon-card">
+            <img src="../images/css.png" class="icon icon-card">
+            <img src="../images/bootstrap.png" class="icon icon-card">
+            <img src="../images/sql.png" class="icon icon-card">
+        </div>
+    </section>
+
+    <!-- PROJECTS-->
+    <section class="projects">
+        <h1>Recent <span>Projects</span> </h1>
+        <p> Here is some of the projects that I've done recently. I actually want to allign this horizontally but I failed.  </p>
+
+        <div class="row">
+            <div class="projects-col">
+                <img src="../images/portfolio.jpg">
+                <h3>Personal Portfolio Website </h3>
+                <p> My first every personal project. I implemented HTML,CSS and Javascript. I do this during my spare-time while doing college on my 3rd semester. 
+                    Luckily, I enrolled in Database and Interface module which one of the tasks required to create an "about me" page, so I spent more time on this project
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="projects-col">
+                <img src="../images/netflixland.jpg">
+                <h3>Netflix Clone Website </h3>
+                <p> I didnt create this page. I put this just for the sake of practicing HTML & CSS.
+                </p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!--CONTACT INFO -->
+    <section class="contact">
+        <h1> Contact Me</h1>
+        <div class="contact-col">
+        <form>
+            <input type ="text" name="name" placeholder="Enter your Name" required>
+            <input type ="email" name="email" placeholder="Enter email address" required>
+            <input type ="text" name="subject"placeholder="Enter your subject" required>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type ="submit" class="blue-btn">Send Message </button>
+        </form>
+        </div>
+    </section>
+
+    <!--FOOTER -->
+    <section class="footer">
+        <h4>Copyright 2021- Stefanus</h4>
+        <p>Note that most of the stuff I write here are just for educational purpose</p>
+    </section>
+
+
+<!-- JS-->
+    <script>
+        var navList = document.getElementById("navList");
+        function showMenu() {
+            navList.style.right = "0";
+        }
+        function hideMenu() {
+            navList.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>
