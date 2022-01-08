@@ -6,8 +6,7 @@
     font-family: 'Raleway', sans-serif;
 }
 html {
-    scroll-behavior:smooth;
-
+    scroll-behavior: smooth;
 }
 body {
     overflow-x:hidden;
@@ -27,7 +26,7 @@ span{
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./hero.jpg);
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/hero.jpg);
     background-position:center;
     background-size:cover;
     position:relative;
@@ -230,7 +229,7 @@ nav .fa {
     
 }
 .skills {
-    max-width: 68rem;
+    max-width: 65rem;
     margin: auto;
     text-align: center;
     margin-top: 2.5rem;
@@ -247,6 +246,7 @@ nav .fa {
     margin-top:20px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
     margin-left:20px;
+    height:100%;
   }
 
   .skills-wrapper img:hover {
@@ -256,43 +256,67 @@ nav .fa {
   
   
 /* Projects */
-
-
 .projects {
-    width:80%;
+    width:90%;
     margin:auto;
     text-align:center;
-    padding:32px 0;
-    margin-top:2rem;
-
+    padding-top:100px;
 }
+
 .projects h1 {
     margin-bottom:1rem;
-    font-size:36px;
+    font-size:46px;
 }
 .projects-col {
-    flex-basis:31%;
+    flex-basis:35%;
     border-radius:10px;
     margin-bottom:5%;
     text-align:left;
-    min-width:250px;
-    
 }
 
 .projects-col img {
     width:100%;
     border-radius:10px;
-    margin-top:16px;
+    margin-top:50px;
 }
 
 .projects-col p{
     padding:0;
+    color:grey;
     
 }
 .projects-col h3 {
     margin-top:16px;
     margin-bottom:15px;
     text-align:left;
+}
+
+@media (max-width:700px) {
+    .projects-col img {
+        width:250px;
+    }
+
+    .projects-col{
+        flex-direction:column;
+    }
+
+    .projects-col p{
+        font-size:0.9rem;
+        
+    }
+    .projects-col h3 {
+        margin-top:16px;
+        margin-bottom:15px;
+        text-align:left;
+    }
+    
+    .contact h1{
+        margin-top:2rem;
+    }
+    .footer,.skills p{
+        width:80%;
+        margin:auto;
+    }
 }
 /* Contact info */
 .contact h1 {
@@ -330,4 +354,31 @@ nav .fa {
 .footer p {
     color:darkgrey;
     margin-bottom:13px;
+}
+
+/* scroll up */
+.scrollup{
+    position:fixed;
+    background-color:lightblue;
+    right:1rem;
+    bottom:-30%;
+    display:inline-flex;
+    padding:.5rem;
+    border-radius:.25rem;
+    z-index:var(--z-tooltip); 
+    opacity:.7;
+    transition:.4s;
+}
+.scrollup__icon {
+    font-size:1.5rem;
+    color:#fff;
+}
+.scrollup:hover {
+    background-color: lightblue;
+    opacity:1;
+}
+
+/* show scroll up */
+.show-scroll{
+    bottom:3rem;
 }
