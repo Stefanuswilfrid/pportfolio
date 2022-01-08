@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./portfolio.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     
 </head>
 <body>
@@ -54,10 +55,11 @@
             </div>
 
             <div class="about-col">
-                <img src="./me2.jpg">
+                <img src="../images/me2.jpg">
             </div>
         </div>
 
+    </section>
     </section>
 
     <section id="skills">
@@ -65,43 +67,42 @@
         <h1 class ="title"> My <span>Top</span> Skills </h1>
         <p> This skills are just for my learning how to implement html and css purpose.I'm no expert at these skills</p>
         <div class="skills-wrapper">
-            <img src="./python.png" class="icon icon-card">
-            <img src="./html.png" class="icon icon-card">
-            <img src="./js.jpg" class="icon icon-card">
-            <img src="./css.png" class="icon icon-card">
-            <img src="./bootstrap.png" class="icon icon-card">
-            <img src="./sql.png" class="icon icon-card">
+            <img src="../images/python.png" class="icon icon-card">
+            <img src="../images/html.png" class="icon icon-card">
+            <img src="../images/js.jpg" class="icon icon-card">
+            <img src="../images/css.png" class="icon icon-card">
+            <img src="../images/bootstrap.png" class="icon icon-card">
+            <img src="../images/sql.png" class="icon icon-card">
         </div>
     </section>
     </section>
 
     <!-- PROJECTS-->
-    <section id="projects">
-    <section class="projects">
-        <h1>Recent <span>Projects</span> </h1>
-        <p> Here is some of the projects that I've done recently. I actually want to allign this horizontally but I failed.  </p>
+    <section class = "projects">
+        <h1> Recent <span>Projects</span></h1>
+        <p> Here is some recent projects i've done.</p>
 
         <div class="row">
             <div class="projects-col">
-                <img src="./portfolio.jpg">
+                <img src="../images/portfolio.jpg">
                 <h3>Personal Portfolio Website </h3>
-                <p> My first every personal project. I implemented HTML,CSS and Javascript. I do this during my spare-time while doing college on my 3rd semester. 
-                    Luckily, I enrolled in Database and Interface module which one of the tasks required to create an "about me" page, so I spent more time on this project
+                <p>My first ever personal project. I implemented HTML,CSS and Javascript. I do this during my spare time 
+                    while doing my college on my 3rd semester. Up to now, I still do modifications to this.
                 </p>
             </div>
-        </div>
 
-        <div class="row">
             <div class="projects-col">
-                <img src="./netflixland.jpg">
-                <h3>Netflix Clone Website </h3>
-                <p> I didnt create this page. I put this just for the sake of practicing HTML & CSS.
-                </p>
+                <img src="../images/penguinweb.jpg">
+                <h3>Penguin Website </h3>
+                <p>A website about penguin whose numbers have declined at such alarming rate. 
+                    I mostly implement HTML and CSS here and very little Javascript.Click above to visit ! </p>
             </div>
+
+            
         </div>
 
     </section>
-    </section>
+
 
     <!--CONTACT INFO -->
     <section id="contact">
@@ -125,18 +126,15 @@
         <p>Note that most of the stuff I write here are just for educational purpose</p>
     </section>
 
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
 
 <!-- JS-->
-    <script>
-        var navList = document.getElementById("navList");
-        function showMenu() {
-            navList.style.right = "0";
-        }
-        function hideMenu() {
-            navList.style.right = "-200px";
-        }
-
-    </script>
+<script src="scrollreveal.min.js"></script>
+<script src ="portfolio.js"></script>
     
 </body>
 </html>
