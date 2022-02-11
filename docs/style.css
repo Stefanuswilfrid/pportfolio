@@ -366,6 +366,7 @@ nav .fa {
     padding:.5rem;
     border-radius:.25rem;
     z-index:var(--z-tooltip); 
+    animation: bounce 2s ease-in-out infinite;
     opacity:.7;
     transition:.4s;
 }
@@ -382,3 +383,15 @@ nav .fa {
 .show-scroll{
     bottom:3rem;
 }
+
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
