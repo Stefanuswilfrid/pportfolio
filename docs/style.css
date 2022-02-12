@@ -20,7 +20,7 @@ a{
     color:white;
 }
 span{
-    color :skyblue;
+    color :#80D8FF;
 }
 
 .header {
@@ -85,7 +85,7 @@ nav {
 .btn {
     display:inline-block;
     color: #fff;
-    border: 2px solid lightblue;
+    border: 2px solid #80D8FF;
     font-size:15px;
     padding:10px 30px;
     background:transparent;
@@ -94,15 +94,15 @@ nav {
     transition: 1s ease;
 }
 .btn:hover {
-    border:2px solid lightblue;
-    background-color:lightblue;
+    border:2px solid #80D8FF; 
+    background-color:#80D8FF;
 }
 
 nav .fa {
     display:none;
 
 }
-@media(max-width:700px){
+@media(max-width:900px){
     .text-box h1 {
         font-size:20px;
     }
@@ -113,11 +113,12 @@ nav .fa {
     }
     .nav-list ul li a {
         font-size:15px;
+        text-transform: uppercase;
         
     }
     .nav-list {
         position:fixed;
-        background: #f44336;
+        background: #80D8FF;
         height: 100vh;  /*complete height */
         width:200px;
         top:0;
@@ -137,9 +138,20 @@ nav .fa {
         padding:30px;
 
     }
+
+    .nav-list ul li:hover a {
+        color: #fff;
+    }
 }
 
 /*about me */
+.about-me {
+    width:80%;
+    margin:auto;
+    padding-top: 80px;
+    padding-bottom:50px;
+}
+/*
 .about-me {
     display: flex;
     align-items: center;
@@ -148,18 +160,39 @@ nav .fa {
     max-width: 68.75rem;
     margin: auto;
     width:80%;
-}
+}*/
+
 .about-col {
-    flex-basis: 50%;
-    min-width:300px;
+    flex-basis: 48%;
+    padding:30px 10px;
+    
+    
 }
 
 .about-col img {
     max-width:100%;
-    padding: 50px 200px ;
     height:22rem;
     transition:transform 0.5s;
+    padding:30px 2px;
+    margin-left: 200px;
+    
+    
+}
 
+@media(max-width: 900px){
+    .row {
+        flex-direction:column;
+    }
+    .about-col {
+        padding-right:none ;
+    }
+    .about-col img {
+        width:65%;
+        height:100%;
+        padding-left: none;
+        margin-left:0;
+       
+    }
 }
 
 .about-col img:hover {
@@ -183,7 +216,7 @@ nav .fa {
 .blue-btn {
     display:inline-block;
     color: lightblue ;
-    border: 2px solid lightblue;
+    border: 2px solid #80D8FF;
     font-size:15px;
     padding:10px 30px;
     background:transparent;
@@ -192,22 +225,11 @@ nav .fa {
     transition: 1s ease;
 }
 .blue-btn:hover {
-    border:2px solid lightblue;
-    background-color:lightblue;
+    border:2px solid #80D8FF;
+    background-color:#80D8FF;
     color:#fff;
 }
 
-@media(max-width:700px){
-    .about-me {
-        padding-top:50px;
-    }
-    .about-col img {
-        width:250px;
-        padding:0px;
-        padding-top:50px;
-    }
-    
-}
 /*skills */
 .title {
     text-align:center;
@@ -218,7 +240,7 @@ nav .fa {
 }
 .title::after {
     content:'';
-    background:skyblue ;
+    background:#80D8FF;
     width:200px;
     height:5px;
     border-radius:5px;
@@ -229,8 +251,8 @@ nav .fa {
     
 }
 .skills {
-    max-width: 65rem;
-    margin: auto;
+    max-width: 75rem;
+    margin:auto;
     text-align: center;
     margin-top: 2.5rem;
   }
@@ -241,11 +263,13 @@ nav .fa {
   }
   
   .skills-wrapper img {
+    
     padding: 1.25rem;
     width:200px;
     margin-top:20px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
-    margin-left:20px;
+    /*margin-left:20px;*/
+    margin:1.5rem;
     height:100%;
   }
 
@@ -291,9 +315,16 @@ nav .fa {
     text-align:left;
 }
 
-@media (max-width:700px) {
+@media (max-width:900px) {
+
+    .projects{
+        width:80%;
+    }
+    .skills-wrapper img {
+        margin:1rem;
+    }
     .projects-col img {
-        width:250px;
+        width:350px;
     }
 
     .projects-col{
@@ -359,24 +390,20 @@ nav .fa {
 /* scroll up */
 .scrollup{
     position:fixed;
-    background-color:lightblue;
+    background-color:#80D8FF;
     right:1rem;
     bottom:-30%;
     display:inline-flex;
     padding:.5rem;
     border-radius:.25rem;
     z-index:var(--z-tooltip); 
+    opacity:1.5;
     animation: bounce 2s ease-in-out infinite;
-    opacity:.7;
     transition:.4s;
 }
 .scrollup__icon {
     font-size:1.5rem;
     color:#fff;
-}
-.scrollup:hover {
-    background-color: lightblue;
-    opacity:1;
 }
 
 /* show scroll up */
