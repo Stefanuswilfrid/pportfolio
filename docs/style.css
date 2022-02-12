@@ -195,6 +195,16 @@ nav .fa {
     }
 }
 
+@media(max-width: 460px){
+    
+    .about-col img {
+        width:85%;
+        padding:0px;
+        
+       
+    }
+}
+
 .about-col img:hover {
     transform:translateY(-15px);
 }
@@ -347,6 +357,13 @@ nav .fa {
     .footer,.skills p{
         width:80%;
         margin:auto;
+    }
+}
+
+@media(max-width: 460px){
+    
+    .projects-col img {
+        width:250px;
     }
 }
 /* Contact info */
